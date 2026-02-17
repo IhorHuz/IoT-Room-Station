@@ -4,10 +4,12 @@ An IoT project that monitors ambient temperature and humidity using an ESP32 and
 
 ## Features
 
-- **Real-time Monitoring**: Displays Temp/Hum on a 16x2 LCD.
-- **Privacy Mode**: Physical button to toggle LCD backlight and display on/off.
-- **Telegram Integration**: Sends room reports every 15 minutes to a private chat.
-- **Non-blocking Code**: Uses `millis()` timers for responsive button handling.
+- **Interactive Web Dashboard**: Live graphing of temperature and humidity using Highcharts.
+- **Hands-Free Updates (OTA)**: Wireless firmware updates via the ElegantOTA web portal.
+- **Telegram Bot Integration**: Remote commands (/status, /light_on, /light_off, /restart) and periodic automated reports.
+- **mDNS Support**: Access the device locally via `http://climate.local`.
+- **Hardware Privacy Toggle**: Physical button to instantly turn the LCD display and backlight on/off.
+- **Data Persistence (Upcoming)**: Built-in recovery from power loss and reboot loops.
 
 ## Components
 
